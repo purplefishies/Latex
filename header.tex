@@ -8,6 +8,22 @@
 \input{common.tex}
 \usepackage[T1]{fontenc}
 \usepackage{tgbonum}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+%
+% Change these, temporary right now
+%
+\newcommand\myshade{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{Aquamarine}
+\hypersetup {
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true
+}
 
 \def\topic#1{}
 \def\subtopic#1{}
